@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hworld.crsapi.mapper.HotelBasicInfoSpecMapper" >
+  <resultMap id="BaseResultMap" type="com.hworld.crsapi.model.HotelBasicInfoSpec" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="PkId" property="pkid" jdbcType="INTEGER" />
+    <result column="HotelCode" property="hotelcode" jdbcType="VARCHAR" />
+    <result column="Language" property="language" jdbcType="INTEGER" />
+    <result column="HotelName" property="hotelname" jdbcType="VARCHAR" />
+    <result column="HotelShortName" property="hotelshortname" jdbcType="VARCHAR" />
+    <result column="Address" property="address" jdbcType="VARCHAR" />
+    <result column="County" property="county" jdbcType="VARCHAR" />
+    <result column="Provence" property="provence" jdbcType="VARCHAR" />
+    <result column="City" property="city" jdbcType="VARCHAR" />
+    <result column="District" property="district" jdbcType="VARCHAR" />
+    <result column="Currency" property="currency" jdbcType="VARCHAR" />
+    <result column="TimeZone" property="timezone" jdbcType="VARCHAR" />
+    <result column="InsertTime" property="inserttime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="Operator" property="operator" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

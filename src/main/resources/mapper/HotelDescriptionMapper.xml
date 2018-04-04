@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hworld.crsapi.mapper.HotelDescriptionMapper" >
+  <resultMap id="BaseResultMap" type="com.hworld.crsapi.model.HotelDescription" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="PkId" property="pkid" jdbcType="INTEGER" />
+    <result column="HotelCode" property="hotelcode" jdbcType="VARCHAR" />
+    <result column="Language" property="language" jdbcType="INTEGER" />
+    <result column="HotelDescription" property="hoteldescription" jdbcType="VARCHAR" />
+    <result column="HotelStrategy" property="hotelstrategy" jdbcType="VARCHAR" />
+    <result column="CancelPolicy" property="cancelpolicy" jdbcType="VARCHAR" />
+    <result column="HotelAlert" property="hotelalert" jdbcType="VARCHAR" />
+    <result column="TravelInfo" property="travelinfo" jdbcType="VARCHAR" />
+    <result column="Meeting" property="meeting" jdbcType="VARCHAR" />
+    <result column="DinningEntertainment" property="dinningentertainment" jdbcType="VARCHAR" />
+    <result column="InsertTime" property="inserttime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="Operator" property="operator" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

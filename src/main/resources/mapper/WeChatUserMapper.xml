@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hworld.crsapi.mapper.WeChatUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.hworld.crsapi.model.WechatUser">
+        <id column="pkId" jdbcType="INTEGER" property="pkid" />
+        <result column="openid" jdbcType="VARCHAR" property="openid" />
+        <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+        <result column="sex" jdbcType="BIT" property="sex" />
+        <result column="language" jdbcType="VARCHAR" property="language" />
+        <result column="country" jdbcType="VARCHAR" property="country" />
+        <result column="province" jdbcType="VARCHAR" property="province" />
+        <result column="city" jdbcType="VARCHAR" property="city" />
+        <result column="headimgurl" jdbcType="VARCHAR" property="headimgurl" />
+        <result column="privilege" jdbcType="VARCHAR" property="privilege" />
+        <result column="integral" jdbcType="INTEGER" property="integral" />
+        <result column="insertTime" jdbcType="TIMESTAMP" property="inserttime" />
+        <result column="abort" jdbcType="BIT" property="abort" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pkId, openid, nickname, sex, language, country, province, city, headimgurl, privilege,
+        integral, insertTime, abort
+    </sql>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from gp_user
+        where pkId = #{pkid,jdbcType=INTEGER}
+    </select>
+
+</mapper>
